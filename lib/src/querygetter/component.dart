@@ -25,8 +25,7 @@ class QueryGetterComponent  {
 
   String ip = "";
   String port = "19132";
-  String testa = "hoge";
-
+  
   Items items = new Items();
 
   void search() {
