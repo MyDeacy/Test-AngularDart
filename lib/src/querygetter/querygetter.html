@@ -1,0 +1,25 @@
+<div>
+  <material-input label="IPAddress"
+                  autoFocus floatingLabel style="width:80%"
+                  [(ngModel)]="ip">
+  </material-input>
+
+  <material-input label="Port"
+                  autoFocus floatingLabel style="width:80%"
+                  [(ngModel)]="port">
+  </material-input>
+<br>
+<material-button raised class="blue"
+                 (trigger)="search"
+                 [disabled]="ip.isEmpty"
+>検索</material-button>
+
+</div>
+
+<div>
+  <ul>
+      <li *ngFor="let item of items.getItems(); let i=index">
+        {{item}}
+      </li>
+  </ul>
+</div>
